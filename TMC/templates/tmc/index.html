@@ -1,0 +1,9 @@
+{% if latest_tmc_list %}
+    <ul>
+    {% for tmc in latest_tmc_list %}
+        <li><a href="/tmc/{{ id }}/">{{ TMC.tmc }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
